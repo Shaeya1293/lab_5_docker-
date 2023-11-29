@@ -10,4 +10,4 @@ choose any of the containers and copy the name. typpe the command -> "docker ins
 in the output, copy the IP address (here, 172.17.0.2) and go to client command prompt and paste it after the bash display -> "bash-4.4# mysql -h 172.17.0.2 -u root -p"
 enter the password as pswd (refer 4th line) -> outputs "welcome to the sql mmonitor"
 enter the command "create database db;" -> outputs "1 row effected"
-enter the command "shows schemas;" -> outputs the database
+enter the command "show schemas;" -> outputs the database
