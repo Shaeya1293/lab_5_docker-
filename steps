@@ -1,0 +1,13 @@
+open and keep docker app
+open command prompt (server side) and write the command -> "docker run hello-world" => ouputs "Hello from Docker!"
+go to docker hub on browser -> go to https://hub.docker.com/ -> search for mysql -> to pull we get a command. Type that command "docker run mysql" on gitbash
+go to the first command prompt and type "docker run -e MYSQL_ROOT_PASSWORD=pswd -d mysql"
+-> you'll get "ac9137eaa58c24d4fb5e5d07e070fea47443413adfbb41fdf950d74a64521129"
+
+open a command prompt (client command prompt) and type the command "docker run -it mysql /bin/bash" -> outputs "bash-4.4#"
+open another command prompt and give the command "docker container ls" => shows whatever containers were running in the section. 
+choose any of the containers and copy the name. typpe the command -> "docker inspect container_name" => this is being done to get the ip address of that container
+in the output, copy the IP address (here, 172.17.0.2) and go to client command prompt and paste it after the bash display -> "bash-4.4# mysql -h 172.17.0.2 -u root -p"
+enter the password as pswd (refer 4th line) -> outputs "welcome to the sql mmonitor"
+enter the command "create database db;" -> outputs "1 row effected"
+enter the command "shows schemas;" -> outputs the database
